@@ -1,19 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://kit.fontawesome.com/2334b971e4.js" crossorigin="anonymous"></script>
+    <title>My Resume</title>
 
-  <title>My Resume</title>
+    <link rel="stylesheet" href="css/index.css" />
 
-  <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <body>
+    <header>
+      <nav>
+        <a id="first" href="#">About</a>
+        <a id="second" href="#">Skills</a>
+        <a id="third" href="#">History</a>
+        <a id="fourth" href="#">Contact</a>
+      </nav>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+      <div id="me">
+        <div>
+          <h1>David Copperfield</h1>
+
+          <section class="show-off">
+            <p>
+              You should hire me because, well... Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+              perspiciatis optio aliquam, error quas id dignissimos consequuntur explicabo vel, magni eum, eaque
+              excepturi! Aliquid magnam tenetur culpa quaerat, sequi rem?
+            </p>
+          </section>
+        </div>
+
+        <div id="portrait">
+          <img src="tweed-cap.jpg" alt="tweed-cap" />
+        </div>
+      </div>
+
+      <hr />
+    </header>
+
+    <section class="business">
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <i class="fas fa-code"></i>
+          </li>
+
+          <li>
+            <i class="fab fa-js-square"></i>
+          </li>
+
+          <li>
+            <i class="fab fa-css3"></i>
+          </li>
+
+          <li>
+            <i class="fab fa-react"></i>
+          </li>
+          <li>
+            <i class="fab fa-python"></i>
+          </li>
+          <li>
+            <i class="fab fa-java"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="history">
+        <h2>History</h2>
+        <ul>
+          <li>Powdermonkey on the Black Pearl</li>
+          <li>Napoleon's personal shoe shiner</li>
+          <li>Ben Franklin's assistant printer</li>
+          <li>George Washingtons's Cattle Keeper</li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            DavidCopperfield1882@snailmail.com
+          </li>
+          <li>345 Old Alley Way, Pennsylvnia</li>
+          <li>(111) 222-3333</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      Copywright Copperfield 2019
+    </footer>
+  </body>
 </html>

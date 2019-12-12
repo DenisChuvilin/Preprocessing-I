@@ -1,1 +1,370 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'IM Fell English SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IM FELL English SC'), local('IM_FELL_English_SC'), url(https://fonts.gstatic.com/s/imfellenglishsc/v9/a8IENpD3CDX-4zrWfr1VY879qFF05pZ7PIIK.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 98%;
+  margin: 2rem;
+}
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    margin: 0;
+    border: 1px solid grey;
+  }
+}
+body nav {
+  width: 50%;
+  justify-content: space-around;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  font-family: 'IM Fell English SC', serif;
+}
+body nav a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+body nav #first {
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+}
+body nav #second {
+  border-left: 1px solid white;
+  padding-left: 4.5rem;
+  border-right: 1px solid white;
+  padding-right: 4.5rem;
+}
+body nav #third {
+  border-right: 1px solid white;
+  padding-right: 4.5rem;
+}
+body nav #fourth {
+  padding-right: 2.5rem;
+}
+@media (max-width: 500px) {
+  body nav {
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-family: 'IM Fell English SC', serif;
+  }
+  body nav #first {
+    border-bottom: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #second {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #third {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #fourth {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+body #me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+body #me h1 {
+  font-size: 10rem;
+  font-family: 'IM Fell English SC', serif;
+  padding-left: 2rem;
+}
+body #me img {
+  width: 18rem;
+  height: 28rem;
+  border-radius: 15%;
+}
+body #me .show-off {
+  font-size: 3rem;
+  width: 60%;
+  display: flex;
+  margin-left: 15rem;
+  margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  body #me {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  body #me #me {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1rem;
+  }
+  body #me h1 {
+    font-size: 5rem;
+    font-family: 'IM Fell English SC', serif;
+    padding: 3rem;
+  }
+  body #me img {
+    width: 38rem;
+    height: 58rem;
+    border-radius: 15%;
+    margin: 3rem 0 0 4.5rem;
+    border: 0;
+    padding: 0;
+    align-items: center;
+  }
+  body #me .show-off {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin-left: 5rem;
+  }
+}
+body hr {
+  margin-top: 6rem;
+}
+body .business {
+  display: flex;
+  justifycontent: space-between;
+  align-items: stretch;
+  height: 50.5%;
+}
+body .business .skills {
+  width: 33.5%;
+  background-color: #018a2d;
+}
+body .business .skills i {
+  padding: 0.5rem 0;
+}
+body .business .history {
+  width: 33.5%;
+  background-color: #ffcc01;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+body .business .history li {
+  padding: 4rem 0;
+}
+body .business .contact {
+  width: 33.5%;
+  background-color: #d51c2c;
+}
+body .business .contact li {
+  padding: 5rem 0;
+}
+body .business h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'IM Fell English SC', serif;
+  border-bottom: 2px solid black;
+}
+body .business ul {
+  list-style: none;
+}
+body .business ul li {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  body .business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+    height: 50.5%;
+  }
+  body .business .skills {
+    width: 100%;
+    background-color: #018a2d;
+  }
+  body .business .skills i {
+    padding: 0.5rem 0;
+  }
+  body .business .history {
+    width: 100%;
+    background-color: #ffcc01;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  body .business .history li {
+    padding: 4rem 0;
+  }
+  body .business .contact {
+    width: 100%;
+    background-color: #d51c2c;
+  }
+  body .business .contact li {
+    padding: 5rem 0;
+  }
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
