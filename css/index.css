@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -107,10 +106,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -130,10 +125,6 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
-}
 @font-face {
   font-family: 'IM Fell English SC';
   font-style: normal;
@@ -144,15 +135,18 @@ body {
 html {
   font-size: 62.5%;
 }
-* {
-  border: 1px solid grey;
+body {
+  height: 98%;
+  margin: 2rem;
 }
-.nav-box {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 8rem;
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    margin: 0;
+    border: 1px solid grey;
+  }
 }
-.nav-box nav {
+body nav {
   width: 50%;
   justify-content: space-around;
   background-color: black;
@@ -160,39 +154,185 @@ html {
   align-items: center;
   font-family: 'IM Fell English SC', serif;
 }
-.nav-box nav a {
+body nav a {
   font-size: 3rem;
   color: white;
   text-decoration: none;
   text-align: center;
   padding: 1rem;
 }
-.nav-box nav #first {
+body nav #first {
   padding-left: 2.5rem;
   padding-right: 2rem;
 }
-.nav-box nav #second {
+body nav #second {
   border-left: 1px solid white;
   padding-left: 4.5rem;
   border-right: 1px solid white;
   padding-right: 4.5rem;
 }
-.nav-box nav #third {
+body nav #third {
   border-right: 1px solid white;
   padding-right: 4.5rem;
 }
-.nav-box nav #fourth {
+body nav #fourth {
   padding-right: 2.5rem;
 }
-#me {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 500px) {
+  body nav {
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-family: 'IM Fell English SC', serif;
+  }
+  body nav #first {
+    border-bottom: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #second {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #third {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  body nav #fourth {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
 }
-#me h1 {
+body #me {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+body #me h1 {
   font-size: 10rem;
   font-family: 'IM Fell English SC', serif;
+  padding-left: 2rem;
 }
-#me img {
-  width: 15rem;
-  height: 25rem ;
+body #me img {
+  width: 18rem;
+  height: 28rem;
+  border-radius: 15%;
+}
+body #me .show-off {
+  font-size: 3rem;
+  width: 60%;
+  display: flex;
+  margin-left: 15rem;
+  margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  body #me {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  body #me #me {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 1rem;
+  }
+  body #me h1 {
+    font-size: 5rem;
+    font-family: 'IM Fell English SC', serif;
+    padding: 3rem;
+  }
+  body #me img {
+    width: 38rem;
+    height: 58rem;
+    border-radius: 15%;
+    margin: 3rem 0 0 4.5rem;
+    border: 0;
+    padding: 0;
+    align-items: center;
+  }
+  body #me .show-off {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin-left: 5rem;
+  }
+}
+hr {
+  margin-top: 6rem;
+}
+.business {
+  display: flex;
+  justifycontent: space-between;
+  align-items: stretch;
+  height: 50.5%;
+}
+.business .skills {
+  width: 33.5%;
+  background-color: #018a2d;
+}
+.business .skills i {
+  padding: 0.5rem 0;
+}
+.business .history {
+  width: 33.5%;
+  background-color: #ffcc01;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.business .history li {
+  padding: 4rem 0;
+}
+.business .contact {
+  width: 33.5%;
+  background-color: #d51c2c;
+}
+.business .contact li {
+  padding: 5rem 0;
+}
+.business h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'IM Fell English SC', serif;
+  border-bottom: 2px solid black;
+}
+.business ul {
+  list-style: none;
+}
+.business ul li {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
 }
