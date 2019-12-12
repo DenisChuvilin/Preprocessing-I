@@ -281,54 +281,86 @@ body #me .show-off {
     margin-left: 5rem;
   }
 }
-hr {
+body hr {
   margin-top: 6rem;
 }
-.business {
+body .business {
   display: flex;
   justifycontent: space-between;
   align-items: stretch;
   height: 50.5%;
 }
-.business .skills {
+body .business .skills {
   width: 33.5%;
   background-color: #018a2d;
 }
-.business .skills i {
+body .business .skills i {
   padding: 0.5rem 0;
 }
-.business .history {
+body .business .history {
   width: 33.5%;
   background-color: #ffcc01;
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-.business .history li {
+body .business .history li {
   padding: 4rem 0;
 }
-.business .contact {
+body .business .contact {
   width: 33.5%;
   background-color: #d51c2c;
 }
-.business .contact li {
+body .business .contact li {
   padding: 5rem 0;
 }
-.business h2 {
+body .business h2 {
   font-size: 5rem;
   text-align: center;
   padding: 1rem;
   font-family: 'IM Fell English SC', serif;
   border-bottom: 2px solid black;
 }
-.business ul {
+body .business ul {
   list-style: none;
 }
-.business ul li {
+body .business ul li {
   text-align: center;
   font-size: 3rem;
   padding: 2rem 0;
 }
-footer {
+@media (max-width: 500px) {
+  body .business {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+    height: 50.5%;
+  }
+  body .business .skills {
+    width: 100%;
+    background-color: #018a2d;
+  }
+  body .business .skills i {
+    padding: 0.5rem 0;
+  }
+  body .business .history {
+    width: 100%;
+    background-color: #ffcc01;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  body .business .history li {
+    padding: 4rem 0;
+  }
+  body .business .contact {
+    width: 100%;
+    background-color: #d51c2c;
+  }
+  body .business .contact li {
+    padding: 5rem 0;
+  }
+}
+body footer {
   display: flex;
   justify-content: center;
   background-color: black;
