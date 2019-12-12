@@ -134,3 +134,65 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'IM Fell English SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IM FELL English SC'), local('IM_FELL_English_SC'), url(https://fonts.gstatic.com/s/imfellenglishsc/v9/a8IENpD3CDX-4zrWfr1VY879qFF05pZ7PIIK.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  border: 1px solid grey;
+}
+.nav-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
+}
+.nav-box nav {
+  width: 50%;
+  justify-content: space-around;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  font-family: 'IM Fell English SC', serif;
+}
+.nav-box nav a {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+.nav-box nav #first {
+  padding-left: 2.5rem;
+  padding-right: 2rem;
+}
+.nav-box nav #second {
+  border-left: 1px solid white;
+  padding-left: 4.5rem;
+  border-right: 1px solid white;
+  padding-right: 4.5rem;
+}
+.nav-box nav #third {
+  border-right: 1px solid white;
+  padding-right: 4.5rem;
+}
+.nav-box nav #fourth {
+  padding-right: 2.5rem;
+}
+#me {
+  display: flex;
+  justify-content: space-around;
+}
+#me h1 {
+  font-size: 10rem;
+  font-family: 'IM Fell English SC', serif;
+}
+#me img {
+  width: 15rem;
+  height: 25rem ;
+}
